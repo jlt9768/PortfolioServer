@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>James Troup Porfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#navBar").load("assets/nav.html", () =>{
+          $("#n1").attr('id', "current");
+      }); 
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main class="container">
+    <nav id="navBar">
+
+    </nav>
+    <h3 class="row" id = "header">About Me:</h3>
+    <section class = "row">
+      <p class = "six columns">
+        Hello my name is James Troup, I am currently a second year honors student at the
+        Rochester Institute of Technology and pursuing a degree in Game Design and Development.
+        I'm currently looking to get a job in the game industry.
+        
+      </p>
+      <figure class = "five columns">
+        <img src="assets/images/profilePic.jpg" alt = "Self Photograph" />
+      </figure>
+    </section>
+    <footer class="row">
+        &copy; 2019 James Troup
+    </footer>
+  </main>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>

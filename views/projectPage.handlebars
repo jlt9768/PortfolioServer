@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>James Troup Porfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- JavaScript -->
+  <script>
+    $(function(){
+      $("#navBar").load("assets/nav.html", () =>{
+          $("#n2").attr('id', "current");
+      }); 
+    });
+  </script>
+  <script src = "assets/portfolio.js"></script>
+  
+</head>
+<body id={{id}}>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <main class="container">
+    <nav id = "navBar">
+      
+    </nav>
+    <section class = "row">
+      <h2 class="twelve columns" >{{projectName}}</h2>
+      <!-- Place holder-->
+      <p class = "four columns">
+          {{{content}}}
+      </p>
+      <figure class = "six columns">
+        <!--src = "images/as1.png" -->
+        <img id = "slideshow" src = {{image}} alt= "{{projectName}} slideshow" />
+        <a class = "left" onclick="moveSlide(-1)">&lt;</a>
+        <a class = "right" onclick="moveSlide(1)">&gt;</a>
+      </figure>
+      
+    </section>
+  
+    <footer class="row">
+        &copy; 2019 James Troup
+    </footer>
+  </main>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

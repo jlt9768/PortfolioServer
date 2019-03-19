@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>James Troup Porfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#navBar").load("assets/nav.html", () =>{
+          $("#n3").attr('id', "current");
+          $("#sm2-3").attr('id', "subCurrent");
+      }); 
+    });
+  </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <main class="container">
+    <nav id="navBar">
+    </nav>
+    <section class = "row">
+      <h2 class="twelve columns">Programs:</h2>
+      <!-- Place holder-->
+      <p class = "five columns">
+        The programs I currently know how to use are Unity, Visual Studio, Photoshop, NetBeans, and Maya. Although
+        I haven't used NetBeans for some time and
+        all of my recent projects are either made in Unity or Visual studio. I also some experience in using photoshop
+        with editing and creating textures for models in Maya.
+      </p>
+      <figure class = "five columns">
+        <img class = "medium" src = "assets/images/vs.png" alt = "Visual Studio Icon" />
+        <img src = "assets/images/unity.png" alt = "Unity Logo" />
+        <img class = "medium" src ="assets/images/logo-photoshop.png" alt = "Photoshop Logo" />
+      </figure>
+    </section>
+
+    <footer class="row">
+        &copy; 2019 James Troup
+    </footer>
+  </main>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

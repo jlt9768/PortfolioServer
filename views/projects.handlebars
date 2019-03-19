@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>James Troup Porfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#navBar").load("assets/nav.html", () =>{
+          $("#n2").attr('id', "current");
+      }); 
+    });
+  </script>
+  <!-- JavaScript -->
+  <script src = "assets/portfolio.js"></script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main class="container">
+    <nav id = "navBar">
+    </nav>
+    <section class = "row">
+      <h2 class="twelve columns">Projects:</h2>
+      <!-- Place holder-->
+      <!--<p class = "four columns">
+        These are some of the projects that I have worked on and completed so far. This list is subject to expand
+        or change  as my experience grows.
+      </p>
+      <figure class = "six columns">
+        <h4>Fragments</h4>
+        <a id = "clickable" href="/fragments"><img id = "slideshow" src = "assets/images/fragments.png" alt= "fragments slideshow" /></a>
+        <a class = "left" onclick="projects(-1)">&lt;</a>
+        <a class = "right" onclick="projects(1)">&gt;</a>
+      </figure>-->
+     <figure class = "five columns">
+        <h5>Animal Stackers</h5>
+        <a id = "clickable" href="/animalstackers"><img id = "slideshow" src = "assets/images/as1.png" /></a>
+      </figure>
+      <figure class = "five columns">
+        <h5>Asteroids</h5>
+        <a id = "clickable" href="/asteroids"><img id = "slideshow" src = "assets/images/asteroids1.png" /></a>
+      </figure>
+        <figure class = "five columns">
+        <h5>Fragments</h5>
+        <a id = "clickable" href="/fragments"><img id = "slideshow" src = "assets/images/fragments.png" /></a>
+      </figure>
+      <figure class = "five columns">
+        <h5>The Maze</h5>
+        <a id = "clickable" href="/maze"><img id = "slideshow" src = "assets/images/maze1.png" /></a>
+      </figure>
+    </section>
+    <section class = "row">
+     
+    </section>
+
+    <footer class="row">
+        &copy; 2019 James Troup
+    </footer>
+  </main>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
