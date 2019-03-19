@@ -51,14 +51,8 @@ app.use(bodyParser.json());
 
 
 const expressHB = expressHandlebars.create({
-    handlebars: Handlebars,
-    helpers:{
-        
-        stringifyFunc: function(fn) {
-         return new Handlebars.SafeString("(" + 
-                    fn.toString().replace(/\"/g,"'") + ")()");
-        },
-    }
+  handlebars: Handlebars,
+
 });
 
 // app.set sets one of the express config options
@@ -79,10 +73,8 @@ router(app);
 
 // Tell the app to listen on the specified port
 app.listen(port, (err) => {
-    // if the app fails, throw the err
+  // if the app fails, throw the err
   if (err) {
     throw err;
   }
-  console.log(`Listening on port ${port}`);
 });
-

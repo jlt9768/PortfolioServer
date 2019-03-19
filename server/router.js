@@ -13,10 +13,10 @@ const router = (app) => {
 
   // when someone goes to the /page1 page, call controllers.page1
   // For example, www.webpage.com/page1, it will route to controllers.page1
-  //app.get('/page1', controllers.page1);
-  //app.get('/page2', controllers.page2);
-  //app.get('/getName', controllers.getName);
-  //app.get('/index', controllers.getPortfolio);
+  // app.get('/page1', controllers.page1);
+  // app.get('/page2', controllers.page2);
+  // app.get('/getName', controllers.getName);
+  // app.get('/index', controllers.getPortfolio);
   app.get('/contact', controllers.getContact);
   app.get('/skills', controllers.getSkills);
   app.get('/programs', controllers.getPrograms);
@@ -29,12 +29,12 @@ const router = (app) => {
   // whenever someone goes to the site without a path (AKA the home page), call controllers.index
   // For example www.webpage.com
   app.get('/', controllers.getPortfolio);
-  
+
   app.get('/*', controllers.notFound);
 
   // When someone POSTS to /setName, call controllers.setName
   // For example, a form submission to www.webpage.com/setName
-  //app.post('/setName', controllers.setName);
+  // app.post('/setName', controllers.setName);
 };
 
 // export the router function
