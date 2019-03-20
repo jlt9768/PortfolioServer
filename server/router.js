@@ -26,6 +26,8 @@ const router = (app) => {
   app.get('/fragments', controllers.getFragments);
   app.get('/maze', controllers.getMaze);
   app.get('/asteroids', controllers.getAsteroids);
+  app.get('/linedrive', controllers.getLineDrive);
+  app.get('/fitnesstracker', controllers.getFitness);
   // whenever someone goes to the site without a path (AKA the home page), call controllers.index
   // For example www.webpage.com
   app.get('/', controllers.getPortfolio);

@@ -80,6 +80,30 @@ const getAsteroids = (req, res) => {
     id: 'asteroids',
   });
 };
+
+const getLineDrive = (req, res) => {
+  res.render('projectPage', {
+    projectName: 'Line Drive',
+    content: `A mobile golf puzzle game built and designed in four weeks for a Casual Game Development class in a 4 person team. It is built in Unity with C# and the team included Katarina Weis, 
+      Matthew Lienhard, and Michael O'Donnell. I built and designed the majority of the levels and implemented the majority of the level mechanics. <br> <br>
+      GitHub Repo can be found <a class = "normal" href="https://github.com/mcl1601/LineDrive" target = "_blank">here</a>.`,
+    image: 'assets/images/ld1.png',
+    id: 'ld',
+  });
+};
+const getFitness = (req, res) => {
+  res.render('projectPage', {
+    projectName: 'Fitness Tracker',
+    content: `This site allows users to track their workouts by entering the weight, reps, or time of a given exercise and then pressing update. Or the user can export their data to a PDF file that they can 
+      then download. It accomplishes this by posting all of the user entered data to the server which can then the data can be retrieved by getting a specific user by their name. 
+      I designed and programmed both the front end and back end of the site.
+
+      <br><br>The site can be accessed <a class = "normal" href="https://project-1-jlt9768.herokuapp.com" target = "_blank">here</a> and the GitHub repo can be viewed 
+      <a class = "normal" href="https://github.com/jlt9768/Project-1-API" target = "_blank">here</a>`,
+    image: 'assets/images/ft1.png',
+    id: 'ft',
+  });
+};
 // export the relevant public controller functions
 module.exports = {
   notFound,
@@ -93,4 +117,6 @@ module.exports = {
   getFragments,
   getMaze,
   getAsteroids,
+  getLineDrive,
+  getFitness,
 };
