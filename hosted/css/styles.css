@@ -348,6 +348,10 @@ h5{
     h2{
         margin-left: 10%;
     }
+    #profilePic{
+        width: 65vw;
+        margin-left: -1vw;
+    }
 }
 
     
