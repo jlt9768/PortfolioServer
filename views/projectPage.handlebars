@@ -50,14 +50,14 @@
     </nav>
     <section class = "row">
       <h2 class="twelve columns" >{{projectName}}</h2>
-      <!-- Place holder-->
+      
       <figure class = "eight columns">
-        <!--src = "images/as1.png" -->
-        <img id = "slideshow" src = {{image}} alt= "{{projectName}} slideshow" />
+        
+        <img id = "slideshow" src = {{image}} alt = "{{projectName}} slideshow" />
         <a class = "left" onclick="moveSlide(-1)">&lt;</a>
         <a class = "right" onclick="moveSlide(1)">&gt;</a>
       </figure>
-      <p class = "ten columns">
+      <p id="para" class = "ten columns">
           {{{content}}}
       </p>
       

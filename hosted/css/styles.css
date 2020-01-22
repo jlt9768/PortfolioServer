@@ -90,9 +90,16 @@ figure{
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    background-color: black;
+    opacity: .4;
+    color: white;
 }
 .left:hover, .right:hover{
     cursor: pointer;
+    opacity: .65;
 }
 .right{
     left: 135px;
@@ -197,6 +204,9 @@ h5{
     font-size: 1.3vw;
     position: relative;
     right: 45px;
+}
+#para{
+    margin-top: 0px;
 }
 @media (max-width: 1225px) {
     h5{
@@ -327,11 +337,12 @@ h5{
         width: 75%;
         margin:0px;
         margin-bottom: 30px;
+        padding-left: 30px;
     }
     
     .right{
-        bottom: -25px;
-        left:-15%;
+        bottom: 10px;
+        left: 25%;
     }
     .left{
         bottom: -25px;
