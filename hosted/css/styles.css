@@ -118,7 +118,11 @@ p{
     z-index:4;    
 }
 #subMenu2{
-    width: 90px;
+    width: 75px;
+}
+#subMenu2 li{
+    font-size: .8em;
+
 }
 #subCurrent{
     color: palegreen;
@@ -310,8 +314,9 @@ h5{
         border:none;
         display:block;
         position: static;
-         margin:auto;
+        margin:auto;
         text-align: center;
+        font-size:1.25em;
     }
     figure{
         margin: 0px;

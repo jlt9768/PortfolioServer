@@ -18,8 +18,8 @@ const router = (app) => {
   // app.get('/getName', controllers.getName);
   // app.get('/index', controllers.getPortfolio);
   app.get('/contact', controllers.getContact);
-  app.get('/skills', controllers.getSkills);
-  app.get('/programs', controllers.getPrograms);
+  // app.get('/skills', controllers.getSkills);
+  // app.get('/programs', controllers.getPrograms);
   app.get('/notes', controllers.getNotes);
   app.get('/projects', controllers.getProjects);
   app.get('/animalstackers', controllers.getAnimalStackers);
@@ -28,6 +28,7 @@ const router = (app) => {
   app.get('/asteroids', controllers.getAsteroids);
   app.get('/linedrive', controllers.getLineDrive);
   app.get('/fitnesstracker', controllers.getFitness);
+  app.get('/financetracker', controllers.getFinance);
   // whenever someone goes to the site without a path (AKA the home page), call controllers.index
   // For example www.webpage.com
   app.get('/', controllers.getPortfolio);

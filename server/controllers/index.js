@@ -1,5 +1,4 @@
 
-
 // function to handle a request to any non-real resources (404)
 // controller functions in Express receive the full HTTP request
 // and get a pre-filled out response object to send
@@ -104,6 +103,19 @@ const getFitness = (req, res) => {
     id: 'ft',
   });
 };
+const getFinance = (req, res) => {
+  res.render('projectPage', {
+    projectName: 'Finance Tracker',
+    content: `This site allows users to track their finances and seperate finances into seperate groups and types. Each user has their own account that they can log into to keep track of their data over multiple visits.
+      Uses Redis and MongoDB to store user data.
+      I designed and programmed both the front end and back end of the site.
+
+      <br><br>The site can be accessed <a class = "normal" href="https://https://james-troup-portfolio.herokuapp.com" target = "_blank">here</a> and the GitHub repo can be viewed 
+      <a class = "normal" href="https://github.com/jlt9768/FinanceTracker" target = "_blank">here</a>`,
+    image: 'assets/images/fn1.png',
+    id: 'fn',
+  });
+};
 // export the relevant public controller functions
 module.exports = {
   notFound,
@@ -119,4 +131,5 @@ module.exports = {
   getAsteroids,
   getLineDrive,
   getFitness,
+  getFinance,
 };

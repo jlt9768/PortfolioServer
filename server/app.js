@@ -62,8 +62,8 @@ app.engine('handlebars', expressHB.engine);
 app.set('view engine', 'handlebars');
 
 // set the views path to the template directory
-// (not shown in this example but needed for express to work)
 app.set('views', `${__dirname}/../views`);
+
 
 // call the cookie parser library and tell express to use it
 app.use(cookieParser());
@@ -77,4 +77,5 @@ app.listen(port, (err) => {
   if (err) {
     throw err;
   }
+  console.log(`Listening on port ${port}`);
 });
