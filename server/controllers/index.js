@@ -110,6 +110,7 @@ const getFinance = (req, res) => {
       Uses Redis and MongoDB to store user data.
       I designed and programmed both the front end and back end of the site.
 
+      <br><br>The site can be accessed <a class = "normal" href="https://finance-tracker-jlt9768.herokuapp.com" target = "_blank">here</a> and the GitHub repo can be viewed 
       <a class = "normal" href="https://github.com/jlt9768/FinanceTracker" target = "_blank">here</a>`,
     image: 'assets/images/fn1.png',
     id: 'fn',
